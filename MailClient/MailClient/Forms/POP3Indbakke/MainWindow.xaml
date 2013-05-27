@@ -88,7 +88,7 @@
                                             <Setter Property="Image.Source" Value="Icons\Back.png" />
                                         </Trigger>
                                         <Trigger Property="IsEnabled" Value="True">
-                                            <Setter Property="Image.Source" Value="C:\Users\JAcob\Documents\GitHub\Programmering\MailClient\MailClient\Forms\POP3Indbakke\Icons\Back.png" />
+                                            <Setter Property="Image.Source" Value="Icons\Back.png" />
                                         </Trigger>
                                     </Style.Triggers>
                                 </Style>
