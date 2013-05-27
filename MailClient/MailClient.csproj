@@ -35,8 +35,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
-    <Reference Include="PopClient">
-      <HintPath>..\PopClient\PopClient.dll</HintPath>
+    <Reference Include="PopClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\PopClient\bin\Debug\PopClient.dll</HintPath>
     </Reference>
     <Reference Include="PresentationUI, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="ReachFramework" />
@@ -85,8 +86,8 @@
     <Compile Include="Forms\POP3Indbakke\NS.MVVM\PasswordBoxBindingBehavior.cs" />
     <Compile Include="Forms\POP3Indbakke\ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Forms\POP3Indbakke\ViewModels\ViewModelBase.cs" />
-    <Compile Include="Forms\UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
+    <Compile Include="Forms\SendMail\Send_Mail.xaml.cs">
+      <DependentUpon>Send_Mail.xaml</DependentUpon>
     </Compile>
     <Compile Include="IsPrim.cs" />
     <Compile Include="ISwitchable.cs" />
@@ -107,7 +108,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\UserControl1.xaml">
+    <Page Include="Forms\SendMail\Send_Mail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -150,20 +151,41 @@
     <Folder Include="Forms\Div\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Forms\POP3Indbakke\Icons\BlueDownArrow.png" />
-    <Resource Include="Forms\POP3Indbakke\Icons\Cancel.png" />
-    <Resource Include="Forms\POP3Indbakke\Icons\CancelGray.png" />
-    <Resource Include="Forms\POP3Indbakke\Icons\GreenUpArrow.png" />
-    <Resource Include="Forms\POP3Indbakke\Icons\Refresh.png" />
-    <Resource Include="Forms\POP3Indbakke\Icons\RefreshGray.png" />
-    <Resource Include="Forms\POP3Indbakke\Icons\ShowLog.png" />
-    <Resource Include="Forms\POP3Indbakke\Icons\ShowLogGray.png" />
+    <Resource Include="Forms\POP3Indbakke\Icons\BlueDownArrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Forms\POP3Indbakke\Icons\Cancel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Forms\POP3Indbakke\Icons\CancelGray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Forms\POP3Indbakke\Icons\GreenUpArrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Forms\POP3Indbakke\Icons\Refresh.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Forms\POP3Indbakke\Icons\RefreshGray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Forms\POP3Indbakke\Icons\ShowLog.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Forms\POP3Indbakke\Icons\ShowLogGray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Forms\POP3Indbakke\Icons\mail.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Forms\POP3Indbakke\Icons\Back.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Forms\POP3Indbakke\Icons\mail.png" />
+    <Resource Include="Forms\POP3Indbakke\Icons\ip_icon_03_MailSend.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -32,7 +32,7 @@ namespace MailClient.Forms.POP3Indbakke.ViewModels
             popClient.Dispose();
         }
 
-        private string title = "Pop Client Demo";
+        private string title = "MailClient";
 
         public string Title
         {

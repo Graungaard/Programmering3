@@ -12,15 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Extra.Mail;
+using MailClient.Forms.POP3Indbakke.NS.MVVM;
+using MailClient.Properties;
+using System.Collections.ObjectModel;
+using System.Net.Mail;
+using System.Windows.Threading;
+using Microsoft.Win32;
+using MailClient.Forms.POP3Indbakke.ViewModels;
 
-namespace MailClient.Forms
+
+
+namespace MailClient.Forms.SendMail
 {
     /// <summary>
     /// Interaction logic for UserControl1.xaml
     /// </summary>
-    public partial class UserControl1 : UserControl
+    public partial class Send_Mail : UserControl
     {
-        public UserControl1()
+        public Send_Mail()
         {
             InitializeComponent();
         }
@@ -29,5 +39,17 @@ namespace MailClient.Forms
         {
             Switcher.Switch(new MyMainMenu());
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new MyMainMenu());
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            LoginGrid.Visibility = Visibility.Collapsed;
+        }
+
+        
     }
 }

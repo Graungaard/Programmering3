@@ -29,7 +29,7 @@ namespace MailClient.Forms
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
-           // Switcher.Switch(new //Send_Mail());
+           Switcher.Switch(new MailClient.Forms.SendMail.Send_Mail());
         }
 
 

@@ -86,8 +86,8 @@
     <Compile Include="Forms\POP3Indbakke\NS.MVVM\PasswordBoxBindingBehavior.cs" />
     <Compile Include="Forms\POP3Indbakke\ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Forms\POP3Indbakke\ViewModels\ViewModelBase.cs" />
-    <Compile Include="Forms\SendMail\UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
+    <Compile Include="Forms\SendMail\Send_Mail.xaml.cs">
+      <DependentUpon>Send_Mail.xaml</DependentUpon>
     </Compile>
     <Compile Include="IsPrim.cs" />
     <Compile Include="ISwitchable.cs" />
@@ -108,7 +108,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\SendMail\UserControl1.xaml">
+    <Page Include="Forms\SendMail\Send_Mail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -183,6 +183,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Forms\POP3Indbakke\Icons\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Forms\POP3Indbakke\Icons\ip_icon_03_MailSend.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
