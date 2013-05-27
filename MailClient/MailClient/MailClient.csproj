@@ -75,7 +75,7 @@
     <Compile Include="Forms\MyMainMenu\MyMainMenu.xaml.cs">
       <DependentUpon>MyMainMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\POP3Indbakke\NS.MVVM\LogWindow.xaml.cs">
+    <Compile Include="Forms\POP3Indbakke\LogWindow.xaml.cs">
       <DependentUpon>LogWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Forms\POP3Indbakke\MainWindow.xaml.cs">
@@ -100,7 +100,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\POP3Indbakke\NS.MVVM\LogWindow.xaml">
+    <Page Include="Forms\POP3Indbakke\LogWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
