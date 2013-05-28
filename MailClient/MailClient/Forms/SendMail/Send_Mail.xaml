@@ -57,9 +57,21 @@
 
             <GridSplitter Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"
                           Background="Gray" ShowsPreview="True" Height="4" />
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="388,140,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="388,174,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox HorizontalAlignment="Left" Height="299" Margin="388,207,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="290"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="388,140,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120">
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="388,174,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120">
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+            <TextBox HorizontalAlignment="Left" Height="299" Margin="388,207,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="290">
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
             <Label Content="Modtager" HorizontalAlignment="Left" Margin="282,129,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="22"/>
             <Label Content="Emne" HorizontalAlignment="Left" Margin="282,168,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.737,-1.077" FontSize="22"/>
             <Label Content="Besked" HorizontalAlignment="Left" Margin="282,207,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="22"/>
