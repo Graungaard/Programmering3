@@ -58,6 +58,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.Toolkit">
+      <HintPath>..\..\..\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -69,8 +72,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ErrorMessage_2.cs" />
-    <Compile Include="Forms\IndbakkeGmail\IndbakkeGmail.xaml.cs">
-      <DependentUpon>IndbakkeGmail.xaml</DependentUpon>
+    <Compile Include="Forms\GmailKalender\GmailKalender.xaml.cs">
+      <DependentUpon>GmailKalender.xaml</DependentUpon>
     </Compile>
     <Compile Include="Forms\MyMainMenu\MyMainMenu.xaml.cs">
       <DependentUpon>MyMainMenu.xaml</DependentUpon>
@@ -92,7 +95,7 @@
     <Compile Include="IsPrim.cs" />
     <Compile Include="ISwitchable.cs" />
     <Compile Include="Switcher.cs" />
-    <Page Include="Forms\IndbakkeGmail\IndbakkeGmail.xaml">
+    <Page Include="Forms\GmailKalender\GmailKalender.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

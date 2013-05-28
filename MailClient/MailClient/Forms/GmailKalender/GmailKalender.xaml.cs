@@ -18,9 +18,9 @@ namespace MailClient.Forms
     /// <summary>
     /// Interaction logic for Indbakke1.xaml
     /// </summary>
-    public partial class IndbakkeGmail : UserControl
+    public partial class GmailKalender : UserControl
     {
-        public IndbakkeGmail()
+        public GmailKalender()
         {
             InitializeComponent();
         }

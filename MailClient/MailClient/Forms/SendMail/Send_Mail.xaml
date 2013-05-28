@@ -10,7 +10,7 @@
              ">
     <Grid >
 
-        <Grid x:Name="MailGrid">
+        <Grid x:Name="MailGrid" Margin="0,-10,0,10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="340*" />
@@ -43,12 +43,16 @@
 
             <GridSplitter Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"
                           Background="Gray" ShowsPreview="True" Height="4" />
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="256,90,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="256,118,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="382,253,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Modtager" HorizontalAlignment="Left" Margin="188,86,0,0" Grid.Row="1" VerticalAlignment="Top"/>
 
         </Grid>
 
         <Grid x:Name="LoginGrid" Width="500" Height="400"  
-               FocusManager.FocusedElement="{Binding ElementName=hostTextBox}">
-            <Border BorderThickness="0,0,5,5" BorderBrush="Black"  CornerRadius="15" Background="#FF0E779E" Margin="10,0,-10,0">
+               FocusManager.FocusedElement="{Binding ElementName=hostTextBox}" Margin="1113,119,-623,191">
+            <Border BorderThickness="0,0,5,5" BorderBrush="Black"  CornerRadius="15" Background="#FF0E779E" Margin="54,0,-54,0">
                 <Border.Effect>
                     <DropShadowEffect />
                 </Border.Effect>
