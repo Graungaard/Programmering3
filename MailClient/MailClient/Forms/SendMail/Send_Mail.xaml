@@ -57,18 +57,18 @@
 
             <GridSplitter Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"
                           Background="Gray" ShowsPreview="True" Height="4" />
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="300,140,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="300,178,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox HorizontalAlignment="Left" Height="299" Margin="300,212,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="444"/>
-            <Label Content="Modtager" HorizontalAlignment="Left" Margin="194,129,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="22"/>
-            <Label Content="Emne" HorizontalAlignment="Left" Margin="194,168,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.737,-1.077" FontSize="22"/>
-            <Label Content="Besked" HorizontalAlignment="Left" Margin="194,207,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="22"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="388,140,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="388,174,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="299" Margin="388,207,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="290"/>
+            <Label Content="Modtager" HorizontalAlignment="Left" Margin="282,129,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="22"/>
+            <Label Content="Emne" HorizontalAlignment="Left" Margin="282,168,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.737,-1.077" FontSize="22"/>
+            <Label Content="Besked" HorizontalAlignment="Left" Margin="282,207,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="22"/>
 
         </Grid>
 
         <Grid x:Name="LoginGrid" Width="500" Height="400"  
                FocusManager.FocusedElement="{Binding ElementName=hostTextBox}" Margin="253,157,237,153">
-            <Border BorderThickness="0,0,5,5" BorderBrush="Black"  CornerRadius="15" Background="#FF0E779E" Margin="890,-10,-890,10">
+            <Border BorderThickness="0,0,5,5" BorderBrush="Black"  CornerRadius="15" Background="#FF0E779E" Margin="946,-12,-946,12">
                 <Border.Effect>
                     <DropShadowEffect />
                 </Border.Effect>
