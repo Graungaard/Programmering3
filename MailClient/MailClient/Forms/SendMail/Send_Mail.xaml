@@ -26,7 +26,7 @@
 
             <ToolBar Grid.Row="0"  ToolBarTray.IsLocked="True" IsEnabled="{Binding IsToolbarAvailable}">
 
-                <Button Margin="3,0,3,0" Click="Button_Click">
+                <Button x:Name="back_button" Margin="0,0,0,0.4" VerticalAlignment="Bottom" Click="back_button_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Width="32">
                             <Image.Style>
@@ -45,8 +45,8 @@
                         <TextBlock VerticalAlignment="Center"> Back to main menu</TextBlock>
                     </StackPanel>
                 </Button>
-                <Button Margin="3,0,3,0" Click="Button_Click">
-                    <StackPanel Orientation="Horizontal">
+                <Button x:Name="sendmail_button" Margin="0,0,0,0.4" VerticalAlignment="Bottom" Click="sendmail_button_Click">
+                    <StackPanel  Orientation="Horizontal">
                         <Image Width="32" Source="/MailClient;component/Forms/POP3Indbakke/Icons/ip_icon_03_MailSend.png">
 
                         </Image>
@@ -57,17 +57,17 @@
 
             <GridSplitter Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"
                           Background="Gray" ShowsPreview="True" Height="4" />
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="388,140,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120">
+            <TextBox x:Name="sendto_textbox" HorizontalAlignment="Left" Height="23" Margin="388,140,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120">
                 <TextBox.Effect>
                     <DropShadowEffect/>
                 </TextBox.Effect>
             </TextBox>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="388,174,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120">
+            <TextBox x:Name="subject_textbox" HorizontalAlignment="Left" Height="23" Margin="388,174,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120">
                 <TextBox.Effect>
                     <DropShadowEffect/>
                 </TextBox.Effect>
             </TextBox>
-            <TextBox HorizontalAlignment="Left" Height="299" Margin="388,207,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="290">
+            <TextBox x:Name="message_textbox" HorizontalAlignment="Left" Height="299" Margin="388,207,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="290">
                 <TextBox.Effect>
                     <DropShadowEffect/>
                 </TextBox.Effect>
@@ -80,11 +80,11 @@
 
         <Grid x:Name="LoginGrid" Width="500" Height="400"  
                FocusManager.FocusedElement="{Binding ElementName=hostTextBox}" Margin="253,157,237,153">
-            <Border BorderThickness="0,0,5,5" BorderBrush="Black"  CornerRadius="15" Background="#FF0E779E" Margin="946,-12,-946,12">
+            <Border BorderThickness="0,0,5,5" BorderBrush="Black"  CornerRadius="15" Background="#FF0E779E" Margin="14,-4,-18,4">
                 <Border.Effect>
                     <DropShadowEffect />
                 </Border.Effect>
-                <StackPanel>
+                <StackPanel Margin="-5,-5,5,5.2">
                     <StackPanel >
                         <StackPanel.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -108,9 +108,8 @@
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="5">
                         <TextBlock Width="150">Password:</TextBlock>
-                        <PasswordBox x:Name="PasswordBoxPOP" Width="332" Height="34" 
-                                     nsmvvm:PasswordBoxBindingBehavior.EnableBinding="True"
-                                     nsmvvm:PasswordBoxBindingBehavior.BoundPassword="{Binding PopPassword, Mode=TwoWay}" />
+                        <PasswordBox x:Name="PasswordBoxPOP1" Width="332" Height="34" 
+                                    />
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="5">
                         <TextBlock Width="150">Enable SSL:</TextBlock>
@@ -126,7 +125,7 @@
                                 <DropShadowEffect/>
                             </Button.Effect>
                         </Button>
-                        <Button  Width="100" Margin="5" Click="Button_Click_1">
+                        <Button  Width="100" Margin="5" >
                             <Button.Effect>
                                 <DropShadowEffect/>
                             </Button.Effect> Cancel

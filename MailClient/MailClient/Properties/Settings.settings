@@ -23,8 +23,11 @@
     <Setting Name="SmtpHost" Type="System.String" Scope="User">
       <Value Profile="(Default)"> smtp.gmail.com</Value>
     </Setting>
-    <Setting Name="SmtpPort" Type="System.String" Scope="User">
-      <Value Profile="(Default)">465</Value>
+    <Setting Name="SmtpPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">587</Value>
+    </Setting>
+    <Setting Name="userpassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

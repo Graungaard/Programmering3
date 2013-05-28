@@ -35,20 +35,53 @@ namespace MailClient.Forms.SendMail
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Switcher.Switch(new MyMainMenu());
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Switcher.Switch(new MyMainMenu());
-        }
+      
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             LoginGrid.Visibility = Visibility.Collapsed;
+            {
+                var passwordBox = PasswordBoxPOP1 as PasswordBox;
+                var password = passwordBox.Password;
+            }
+
+
+
         }
+
+        private void sendmail_button_Click(object sender, RoutedEventArgs e)
+        {
+             try
+                {
+                    MailMessage mail = new MailMessage();
+                    SmtpClient SmtpServer = new SmtpClient (Settings.Default.SmtpHost);
+
+                    mail.From = new MailAddress(Settings.Default.Username);
+                    mail.To.Add(sendto_textbox.Text);
+                    mail.Subject = subject_textbox.Text;
+                    mail.Body = message_textbox.Text;
+                    
+                    SmtpServer.Port = Settings.Default.SmtpPort;
+                    SmtpServer.Credentials = new System.Net.NetworkCredential(Settings.Default.Username, Settings.Default.userpassword);
+                    SmtpServer.EnableSsl = Settings.Default.EnableSsl;
+
+                    SmtpServer.Send(mail);
+                    MessageBox.Show("mail Send");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+        }
+
+        private void back_button_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new MyMainMenu());
+        }
+
+        
+
+        
 
         
     }

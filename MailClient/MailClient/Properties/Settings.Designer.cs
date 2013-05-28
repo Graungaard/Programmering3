@@ -109,13 +109,25 @@ namespace MailClient.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("465")]
-        public string SmtpPort {
+        [global::System.Configuration.DefaultSettingValueAttribute("587")]
+        public int SmtpPort {
             get {
-                return ((string)(this["SmtpPort"]));
+                return ((int)(this["SmtpPort"]));
             }
             set {
                 this["SmtpPort"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string userpassword {
+            get {
+                return ((string)(this["userpassword"]));
+            }
+            set {
+                this["userpassword"] = value;
             }
         }
     }
